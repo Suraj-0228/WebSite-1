@@ -1,0 +1,93 @@
+/* Navbar Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #16222a, #3a6073);
+    color: #f8f6fa;
+}
+
+.navbar .navbar-brand .img-fluid {
+    width: 14rem;
+    height: 4rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #f8f6fa;
+}
+
+.login-btn .btn {
+    font-size: 1.1rem;
+    color: #f8f6fa;
+}
+
+.toggle-btn {
+    background-image: linear-gradient(to bottom, #16222a, #3a6073);
+    color: #f8f6fa;
+}
+
+/* Offcanvas Styles */
+.offcanvas,
+#offcanvasExample {
+    background-image: linear-gradient(to bottom, #16222a, #3a6073);
+    color: #f8f6fa;
+    width: 20rem;
+}
+
+.offcanvas-header {
+    color: #f8f6fa;
+    font-size: 1.8rem;
+}
+
+.offcanvas-body i .nav-link {
+    color: #f8f6fa;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #f8f6fa;
+    padding-bottom: 10px;
+}
+
+.offcanvas-body .sidebar-a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f8f6fa;
+}
+
+.offcanvas-body .sidebar-btn a {
+    width: 8rem;
+    color: #f8f6fa;
+    font-size: 1.2rem;
+}
+
+.offcanvas-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.offcanvas-footer p {
+    font-size: 1rem;
+}
+
+/* Modal Styles */
+.modal-backdrop.show {
+    z-index: -1;
+}
+
+/* Mobile view: Hide the navbar and display the offcanvas */
+@media (max-width: 767px) {
+
+    .navbar .navbar-brand .img-fluid {
+        width: 13rem;
+        height: 4rem;
+    }
+
+    .navbar-nav,
+    .login-btn {
+        display: none !important;
+    }
+
+}
